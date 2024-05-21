@@ -1,0 +1,34 @@
+{
+  "name": "learnapp-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test",
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon",
+    "start": "ts-node src/index.ts",
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@fastify/type-provider-typebox": "^4.0.0",
+    "@sinclair/typebox": "^0.32.30",
+    "better-sqlite3": "^10.0.0",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.30.10",
+    "drizzle-typebox": "^0.1.1",
+    "fastify": "^4.27.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.10",
+    "@types/node": "^20.12.12",
+    "drizzle-kit": "^0.21.2",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
